@@ -2,159 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
     <link rel="stylesheet" href="/animate.css">
     <script src="/wow.min.js"></script>
-    
+    <script src="/typed.min.js"></script>
     <script>
+        window.onload = () => {
+            let wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 160,
+            mobile: true,
+            live: true
+            });
+            wow.init();
+        }
+        
         new WOW().init();
     </script>
-    <style>
-    body{
-        margin: 0;
-    }
-    #app {
-        background-color: green;
-        
 
-        display: grid;
-        grid-template-columns: repeat(4 ,1fr);
-        grid-template-rows: repeat(12, 1fr);
-        grid-gap: 0;
-        width: 100%;
-        /* margin: auto; */
-        grid-auto-rows: min-content;
-    }
-    nav {
-
-        grid-column: 1/5;
-        grid-row:1/1;
-        
-        height: 50px;
-        
-        padding : 20px;
-        
-        background-color:grey;
-        grid-auto-rows: min-content;
-    } 
-
-    nav > a {
-        float: right;
-        background-color: red;
-        padding: 10px;
-        margin: 20px;
-    }
-
-    #main {
-        grid-column: 1/5;
-        grid-row: 2/7;
-        background: url(images/bg_laptop_coffee.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        grid-auto-rows: min-content;
-    }
-    #about {
-        grid-column: 1/5;
-        grid-row: 7/8;
-        background-color: red;
-    
-    }
-    #skills {
-        text-align: center;
-        grid-column: 1/5;
-        grid-row: 8/9;
-        background-color: purple;
-    }
-    #skills ul {
-        margin-top: 30px;
-    }
-    #skills ul li {
-        text-transform: uppercase;
-        display: inline;
-        width: 12.5%;
-        padding: 20px;
-        /* background-color: white; */
-    }
-    #skills ul:first-child{
-        
-    }
-    #projects {
-        grid-column: 1/5;
-        grid-row: 8/10;
-        grid-auto-rows: min-content;
-        /* background-color: orange; */
-    }
-    #contact {
-        grid-column: 1/5;
-        grid-row: 10/11;
-        grid-auto-rows: min-content;
-        /* background-color: cyan; */
-    }   
-    #footer{
-        text-align: center;
-        bottom: 0px;
-        grid-column: 1/5;
-        grid-row: 11/12;
-        grid-auto-rows: min-content;
-        /* background-color: grey; */
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="appStyle.css">
 </head>
 <body>
-    <div id="app">
-        <nav>
-            <a href="#contact"> contact me </a>
-            <a href="#projects">projects</a>
-            <a href="#skills"> skills</a>
-            <a href="#about-me">about me</a>
-            
-        </nav>
-        <main id="main">
-           
-        </main>
-        <div id="about">
-            Hi! I'm student of IT technologies. Computers are my passion. 
-        </div>
-        <div id="skills">
-            <ul>
-                
-                <li class="animated fadeInLeft">JavaScript</li>
-                <li>
-                    html5
-                </li>
-                <li>css3</li>
-                <li>node</li>
-                <li>react</li>
-                <li>npm</li>
-                <li>
-<!--                     
-                    <object type="image/svg+xml" data="/icons/windows_black.svg" width:"30" height:"30">
-                        Your browser does not support SVG
-                    </object> -->
-                    
-                    Operating System
 
-                </li>
-                
-                <li class="animated fadeInRight">Github</li>
-                
-            </ul>
-        </div>
-        <div id="projects">my projects</div>
-        <div id="contact">contact me
-            <form>
-                <input type='text' placeholder="Name, company name"/>
-                <input type="message" placeholder="Message"/>
-                <button type="submit">send</button>
-            </form>
-        </div>
-        <div id="footer">Site created by Piotr Wolski. All rights reserved. Copyright © 2018</div>
-       
-        <div class="animated fadeInLeft">
-            Content to Reveal Here
-        </div>
+
+    
+    <!-- <h1 class="fromCenter">Expand from center</h1><br/>
+    <h1 class="fromRight">Expand from right</h1><br/>
+    <h1 class="fromLeft">Expand from left</h1> -->
+
+    <div class = "app">
+        <% include upNav %>
+        <% include main %>
+        <% include about %>
+        <% include skills %> 
+        <% include projects %>
+        <% include contact %>
+        <% include footer %> 
     </div>
 </body>
 </html>
