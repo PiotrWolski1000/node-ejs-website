@@ -4,7 +4,7 @@
 body{
     margin: 0;
 }
-/* @media only screen and (max-width: 1080px) { */
+/* @media only screen a nd (max-width: 1080px) { */
     .app {
         --mBgColor: ;
         --mNavColor: ;
@@ -37,46 +37,35 @@ body{
                              "footer";
         grid-gap: 0;
         grid-auto-rows: minmax(100px, auto);
-        background-color:var(--mBgColor);
-            
+        background-color:var(--mBgColor);           
     }
     .upNav {
         color: white;
         grid-area: navUp;
         width: 100%;
-        /* position: fixed; */
         top: 0px;
+        display: inline-block;
         background-color:var(--mNavColor);
         /* border-bottom: 1px solid var(--mBorderColor); */
     } 
-    
     .upNav > a {
-        
         float: right;
-        padding: 10px;
-        margin: 20px;
-        /* position: fixed;
-        top: 0px; */
-
         color: mNavTextColor;
-        display: inline-block; 
-        margin:0;
+        width: 25%; 
+        text-align: center;
         text-transform:uppercase; 
-        text-decoration: none;  
+        text-decoration: none;
     }
-
     .upNav a:after {
         display:block;
         content: '';
         border-bottom: solid 3px black;  
         transform: scaleX(0);  
         transition: transform 250ms ease-in-out;
-        }
+    }
     .upNav a:hover:after { transform: scaleX(1); }
     .upNav a.fromRight:after{ transform-origin:100% 50%; }
     .upNav a.fromLeft:after{  transform-origin:  0% 50%; }
-    
-    
     .main {
         color: whitesmoke;
         grid-area: main;
@@ -87,79 +76,102 @@ body{
         background-size: cover;
         grid-auto-rows: min-content;
     }
-
     .main #intro {
         text-align: center;
     }
-
     #about {
         grid-area: about;
         background-color: var(--mAboutColor);
         text-indent: 20px;
+        margin: auto;
         display: flex;
-        align-items: center;
-
+        flex-direction: column;
+    }
+    #about h2{
+        text-transform: uppercase;
+        text-align: center;
+    }
+    #about-me-card{
+        display: flex;
+        flex-direction: row; 
+        align-items: center;    
     
     }
+    #avatar {
+        margin-top: 20px;
+        background: url(images/mFace.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
     .skills {
+        margin: auto;
         grid-area: skills;
         background-color: var(--mSkillsColor);
         text-align: center;
-        background-color: var(--mSkillsColor); 
     }
     .skills ul {
-        
+        display: flex;
+        flex-direction: row;
+        margin: auto;
         column-count:5;
         -moz-column-count:5;
         -webkit-column-count:5;
     } 
     .skills ul li {
-        margin: auto;
-        text-transform: uppercase;
+        /* display: inline; */
         display: inline-block;
-        margin: auto;
-        text-align: center;
-        padding: 20px;
+        /* display: block; */
         background-color: white;
-        margin: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: auto;
+        padding: 20px;
     }
-    
     .skills ul li:hover {
         background-color: yellow;
-    }
+        
 
+    }
     .projects {
         grid-area: projects;
         grid-auto-rows: min-content;
         background-color: var(--mProjectsColor);
         
     }
-
     .projects h2 {
         text-transform: uppercase;
-
+        text-align: center;
     }
-
-    
-
     .contact {
         grid-area: contact;
+        /* width: 100%; */
         grid-auto-rows: min-content;
         background-color: var(--mContactColor);
+        text-align: center;
+        
     }   
+    .contact input{
+        margin: auto;
+        display: block;
+        padding: 5px;
+        margin-bottom: 10px;
+        width: 50%;
+    }
     .footer{
         background-color: var(--mFooterColor);
         grid-auto-rows: min-content;
         grid-area: footer;
 
-        text-align: center;
         /* bottom: 0px; */
-        display: flex;
-        align-items: center;
+        /* display: flex;
+        align-items: center; */
+        text-align: center;        
     }
-    
-   
-
 /* small screens */
 @media only screen and (max-width: 600px) {
     body {
@@ -169,6 +181,28 @@ body{
     .upNav{
 
         background-color: var(--mNavColor);
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+    #about-me-card{
+        display: flex;
+        flex-direction: column; 
+    }
+    #about h2{
+        text-transform: uppercase;
+    }
+    #avatar {
+        background: url(images/mFace.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        margin: auto;
     }
 
     .skills {
@@ -183,7 +217,7 @@ body{
     }
 
     .skills ul {
-        /* display: inline-block; */
+        display: inline-block;
         column-count:1;
         -moz-column-count:1;
         -webkit-column-count:1;

@@ -1,17 +1,53 @@
 <div id = "skills" class="skills">
     <h2>I work with..</h2>
-    <ul>
-        <li class="wow fadeInLeft animated">JS</li>
-        <li class="wow fadeInUp animated">html5</li>
-        <li class="wow fadeInUp animated">css3</li>
-        <li class="wow fadeInUp animated">node</li>
-        <li class="wow fadeInUp animated">react</li>
-        <li class="wow fadeInUp animated">npm</li>
-        <li class="wow fadeInUp animated">Adobe Photoshop</li>
-        <li class="wow fadeInUp animated">Windows</li>
-        <li class="wow fadeInUp animated">Linux</li>
+    <ul id="skillsList">
+        <li class="wow fadeInLeft animated"><p> JS </p></li>
+        <li class="wow fadeInUp animated"><p> HTML5 </p> </li>
+        <li class="wow fadeInUp animated"><p>CSS3</p></li>
+        <li class="wow fadeInUp animated"><p>NodeJS</p></li>
+        <li class="wow fadeInUp animated"><p>ReactJS</p></li>
+        <li class="wow fadeInUp animated"><p>npm</p></li>
+        <li class="wow fadeInUp animated"><p>Adobe Photoshop</p></li>
+        <li class="wow fadeInUp animated"><p>Windows</p> </li>
+        <li class="wow fadeInUp animated"><p>Linux</p></li>
         
-        <li class="wow animated fadeInRight">Github</li>
-        
+        <li class="wow animated fadeInRight"><p>Github</p></li>
+        <!-- <script>
+
+            let lista = document.getElementsByTagName('p')
+            
+            // console.log(skills.length, picNames.length)
+            // console.log('lista: ', lista)
+            
+            let iterator = 0
+            
+            
+            Array.prototype.forEach.call(lista, item => {
+                //on mouse ovoer
+                // const picNames = ['JS-logo.svg', 'HTML5-logo.svg', 'CSS3-logo.svg', 'NodeJS-logo.svg', 'ReactJS-logo.svg', 'npm-logo.svg','Photoshop-logo.svg', 'Windows-logo.svg', 'Linux-logo.svg', 'Github-logo.svg']
+                // const skills = ['JS', 'HTML5', 'CSS3', 'NodeJS', 'ReactJS', 'npm', 'Photoshop', 'Windows', 'Linux', 'Github']
+                // console.log(iterator)
+                item.addEventListener('mouseenter', () => {
+                    item.innerHTML = "<img src='http://placehold.it/50x50'/>";
+                    // item.style.display = 'none'
+                })
+                //on mouse out
+                
+                item.addEventListener('mouseleave', function(){
+                    // item.style.display = 'block'
+                    // console.log(skills[iterator])
+                    // item.innerHTML = skills[iterator] 
+                    // console.log(skills[iterator])
+                    // item.style.img.display =
+                })
+                
+                iterator++;
+            })
+
+            // lista.forEach((item)=>{
+            //     item.innerHTML = "test"
+            // })
+
+        </script> -->
     </ul>
 </div>

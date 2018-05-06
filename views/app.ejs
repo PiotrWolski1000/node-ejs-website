@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= title %></title>
     <link rel="stylesheet" href="/animate.css">
+    <link rel="stylesheet" href="/flip3D.css">
     <script src="/wow.min.js"></script>
     <script src="/typed.min.js"></script>
+    <!-- <script src="dist/js/smooth-scroll.js"></script> -->
     <script>
         window.onload = () => {
             let wow = new WOW({
@@ -38,14 +40,19 @@
         <% include about %>
         <% include skills %> 
         <% include projects %>
-        <% include contact %>
+        <% include contact %><!-- add message, that e mail was already send-->
         <% include footer %> 
 
         <script>
+            // var scroll = new SmoothScroll('a[href*="#"]', {
+            //     speed: 500,
+            //     easing: 'easeInOutCubic',
+            // });
+
             wow = new WOW( {
                 boxClass:     'wow',
                 animateClass: 'animated',
-                offset:       0
+                offset: 0
                 }
             );
             
