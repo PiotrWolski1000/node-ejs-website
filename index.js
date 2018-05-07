@@ -38,9 +38,6 @@ app.post('/', (req, res) => {
     sgMail.send(msg);
 
     res.render( 'app', { title: 'Piotr Wolski', message : "Message will be delivered as soon as possible, thank you :)" } );
-    
-    // console.log('Mail sended')
-    // res.send("elo xd")
 })
 
 

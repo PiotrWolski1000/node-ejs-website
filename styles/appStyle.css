@@ -4,6 +4,11 @@
 body{
     margin: 0;
 }
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
 /* @media only screen a nd (max-width: 1080px) { */
     .app {
         --mBgColor: ;
@@ -87,10 +92,6 @@ body{
         display: flex;
         flex-direction: column;
     }
-    #about h2{
-        text-transform: uppercase;
-        text-align: center;
-    }
     #about-me-card{
         display: flex;
         flex-direction: row; 
@@ -114,28 +115,9 @@ body{
         background-color: var(--mSkillsColor);
         text-align: center;
     }
-    .skills ul {
+    .skills > .skillsListRow {
         display: flex;
         flex-direction: row;
-        margin: auto;
-        column-count:5;
-        -moz-column-count:5;
-        -webkit-column-count:5;
-    } 
-    .skills ul li {
-        /* display: inline; */
-        display: inline-block;
-        /* display: block; */
-        background-color: white;
-        text-transform: uppercase;
-        text-align: center;
-        margin: auto;
-        padding: 20px;
-    }
-    .skills ul li:hover {
-        background-color: yellow;
-        
-
     }
     .projects {
         grid-area: projects;
@@ -143,13 +125,8 @@ body{
         background-color: var(--mProjectsColor);
         
     }
-    .projects h2 {
-        text-transform: uppercase;
-        text-align: center;
-    }
     .contact {
         grid-area: contact;
-        /* width: 100%; */
         grid-auto-rows: min-content;
         background-color: var(--mContactColor);
         text-align: center;
@@ -166,10 +143,6 @@ body{
         background-color: var(--mFooterColor);
         grid-auto-rows: min-content;
         grid-area: footer;
-
-        /* bottom: 0px; */
-        /* display: flex;
-        align-items: center; */
         text-align: center;        
     }
 /* small screens */
@@ -190,9 +163,9 @@ body{
         display: flex;
         flex-direction: column; 
     }
-    #about h2{
+    /* #about h2{
         text-transform: uppercase;
-    }
+    } */
     #avatar {
         background: url(images/mFace.png) no-repeat;
         -webkit-background-size: cover;
@@ -209,35 +182,18 @@ body{
         display: block;
         margin: auto;
         background-color: var(--mSkillsColor); 
-        text-align: center;
-    }
-    .skills h2 {
-        text-transform: uppercase;
-        color: var(--mSkillsH2Color);
+        /* text-align: center; */
     }
 
-    .skills ul {
-        display: inline-block;
-        column-count:1;
-        -moz-column-count:1;
-        -webkit-column-count:1;
-        
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        
-        list-style: none;
-        padding-left: 0;
-        width: 100%;
+    .skills > .skillsListRow {
+        display: flex;
+        flex-direction: column;
     }
 
-    .skills ul li{
-     
-        display: block;
-        
-        margin-bottom: 20px;
-
-        
+    .flip3D{ 
+        width:100px; 
+        height:100px; 
+        margin: 10px auto;	
     }
 
     .main #intro {

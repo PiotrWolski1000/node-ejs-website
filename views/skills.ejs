@@ -1,53 +1,116 @@
-<div id = "skills" class="skills">
+<div class="skills">
     <h2>I work with..</h2>
-    <ul id="skillsList">
-        <li class="wow fadeInLeft animated"><p> JS </p></li>
-        <li class="wow fadeInUp animated"><p> HTML5 </p> </li>
-        <li class="wow fadeInUp animated"><p>CSS3</p></li>
-        <li class="wow fadeInUp animated"><p>NodeJS</p></li>
-        <li class="wow fadeInUp animated"><p>ReactJS</p></li>
-        <li class="wow fadeInUp animated"><p>npm</p></li>
-        <li class="wow fadeInUp animated"><p>Adobe Photoshop</p></li>
-        <li class="wow fadeInUp animated"><p>Windows</p> </li>
-        <li class="wow fadeInUp animated"><p>Linux</p></li>
-        
-        <li class="wow animated fadeInRight"><p>Github</p></li>
-        <!-- <script>
+    
+    <div class="skillsListRow">
+        <div class="wow slideInLeft animated">
+            <div class='flip3D'>
+                <div class='front'>
+                    <img src="icons/javascript-logo.svg" height="100px" width="100px">
+                </div>
+                <div class='back'>
+                    <p> JavaScript </p>
+                </div>
+            </div>
+        </div>
+        <div class="wow slideInUp animated">
+            <div class='flip3D'>
+                <div class='front'>
+                    <img src="icons/html5-logo.svg" height="100px" width="100px">
+                </div>
+                <div class='back'>
+                    <p> HTML5 </p>
+                </div>
+            </div>    
+        </div>
+            
+        <div class="wow slideInUp animated">
+            <div class='flip3D'>
+                <div class='front'>
+                    <img src='icons/css-logo.svg' height="100px" width="100px">
+                </div>
+                <div class='back'>
+                    <p> CSS3 </p> 
+                </div>
+            </div>
+        </div>
+        <div class="wow slideInUp animated">
+            <div class='flip3D'>
+                <div class='front'>
+                    <img src='icons/node-logo.svg' height="100px" width="100px">
+                </div>
+                <div class='back'>
+                    <p>  NodeJS </p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="wow slideInRight animated">
+            <div class='flip3D'>
+                <div class='front'>
+                    <img src="icons/react-logo.svg" height="100px" width="100px">
+                </div>
+                <div class='back'>
+                    <p>  ReactJS </p>
+                </div>
+            </div>
+        </div>
 
-            let lista = document.getElementsByTagName('p')
-            
-            // console.log(skills.length, picNames.length)
-            // console.log('lista: ', lista)
-            
-            let iterator = 0
-            
-            
-            Array.prototype.forEach.call(lista, item => {
-                //on mouse ovoer
-                // const picNames = ['JS-logo.svg', 'HTML5-logo.svg', 'CSS3-logo.svg', 'NodeJS-logo.svg', 'ReactJS-logo.svg', 'npm-logo.svg','Photoshop-logo.svg', 'Windows-logo.svg', 'Linux-logo.svg', 'Github-logo.svg']
-                // const skills = ['JS', 'HTML5', 'CSS3', 'NodeJS', 'ReactJS', 'npm', 'Photoshop', 'Windows', 'Linux', 'Github']
-                // console.log(iterator)
-                item.addEventListener('mouseenter', () => {
-                    item.innerHTML = "<img src='http://placehold.it/50x50'/>";
-                    // item.style.display = 'none'
-                })
-                //on mouse out
-                
-                item.addEventListener('mouseleave', function(){
-                    // item.style.display = 'block'
-                    // console.log(skills[iterator])
-                    // item.innerHTML = skills[iterator] 
-                    // console.log(skills[iterator])
-                    // item.style.img.display =
-                })
-                
-                iterator++;
-            })
+    </div>
 
-            // lista.forEach((item)=>{
-            //     item.innerHTML = "test"
-            // })
+<!-- second row, column-->
 
-        </script> -->
-    </ul>
+    <div class="skillsListRow">
+        <div class="wow slideInLeft animated">
+            <div class="flip3D">
+                <div class="front">
+                    <img src='icons/npmjs-logo.svg' width="100px" height="100px">
+                </div>
+                <div class="back">
+                    <p>  Node Package Manager </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wow slideInUp animated">
+            <div class="flip3D">
+                <div class="front">
+                    <img src="icons/photoshop-logo.svg" width="100px" height="100px">
+                </div>
+                <div class="back">
+                    <p> Adobe Photoshop </p>
+                </div>
+            </div>
+        </div>
+        <div class="wow slideInUp animated">
+            <div class="flip3D">
+                <div class="front">
+                    <img src="icons/ubuntu-logo.svg" width="100px" height="100px">
+                </div>
+                <div class="back">
+                    <p> Linux Ubuntu </p>   
+                </div>
+            </div>
+        </div>  
+        <div class="wow slideInUp animated">
+            <div class="flip3D">
+                <div class="front">
+                    <img src="icons/windows-logo.svg" width="100px" height="100px">
+                </div>
+                <div class="back">
+                    <p> MS Windows </p>  
+                </div>
+            </div>
+        </div>
+                    
+        <div class="wow slideInRight animated">
+            <div class='flip3D'>
+                <div class='back'>
+                    <p> Github </p>
+                </div>
+                <div class='front'>
+                    <img src="icons/github-logo.svg" width="100px" height="100px">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

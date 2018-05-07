@@ -1,18 +1,33 @@
-.flip3D{ width:240px; height:200px; margin:10px; float:left; }
+.flip3D{ 
+	width:100px; 
+	height:100px; 
+	margin: 50px auto;	
+	margin-left: 50px;
+	margin-right: 50px;
+}
 .flip3D > .front{
+	-webkit-transform:rotateY(0deg);
 	position:absolute;
 	transform: perspective( 600px ) rotateY( 0deg );
-	background:#FC0; width:240px; height:200px; border-radius: 7px;
+	width:100px; 
+	height:100px; 
+	border-radius: 7px;
 	backface-visibility: hidden;
 	transition: transform .5s linear 0s;
+	/* background-color: green; */
 }
 .flip3D > .back{
+	/* background-color: red; */
 	position:absolute;
 	transform: perspective( 600px ) rotateY( 180deg );
-	background: #80BFFF; width:240px; height:200px; border-radius: 7px;
+	width:100px; 
+	height:100px;
+	border-radius: 7px;
 	backface-visibility: hidden;
 	transition: transform .5s linear 0s;
+	text-align: center;
 }
+
 .flip3D:hover > .front{
 	transform: perspective( 600px ) rotateY( -180deg );
 }
