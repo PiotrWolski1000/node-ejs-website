@@ -1,4 +1,7 @@
-# portfolio-site
-My portfolio.
+# website with express and ejs view engine
 
-simple portfolio site written with express server 
+type npm start to run project, then navigate to localhost:5000
+
+
+
+
